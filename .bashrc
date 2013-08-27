@@ -1,6 +1,7 @@
 # .bashrc file
 # By Balaji S. Srinivasan (balajis@stanford.edu)
 # Modified by Kyle M. Smith (bestape.net) 
+
 #
 # Concepts:
 #
