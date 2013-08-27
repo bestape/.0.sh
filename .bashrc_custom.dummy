@@ -1,0 +1,6 @@
+# Local Variables:
+# mode: sh
+# End:
+
+# if you modify this, after you're finished, run ~#:updateBash
+alias snakes='echo are in the grass'
