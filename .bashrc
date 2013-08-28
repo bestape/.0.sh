@@ -231,7 +231,7 @@ alias getDeb='sudo dpkg -i'
 alias update='sudo apt-get update && sudo apt-get upgrade'
 alias updateBash='source .bashrc'
 alias editSsh='nano ~/.ssh/config'
-alias aliases='grep "alias " .bashrc*'
+alias aliases='grep "alias " ~/.bashrc*'
 alias editBash='nano .bashrc_custom'
 
 ## ------------------------------
