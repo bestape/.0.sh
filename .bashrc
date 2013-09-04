@@ -226,7 +226,7 @@ fi
 ## ---------------------------
 
 alias gitAB='git log -p --decorate --color'
-alias getApp='sudo apt-get install'
+alias getApt='sudo apt-get install'
 alias getDeb='sudo dpkg -i'
 alias update='sudo apt-get update && sudo apt-get upgrade'
 alias updateBash='source .bashrc'
