@@ -27,6 +27,7 @@
 (setq show-trailing-whitespace t)
 (setq suggest-key-bindings t)
 (setq vc-follow-symlinks t)
+(setq-default tab-width 4)
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
