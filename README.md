@@ -1,12 +1,13 @@
 # bestape's devkit dotfiles
 ## about
-Clone and run this on a new Ubuntu 12.04 or 14.04 instance.
+Clone and run this on a new Ubuntu instance.
+Tested on 12.04 and 14.04.
 ## setup
 ```
 cd ~
 sudo apt-get install -y git-core
-git clone https://github.com/bestape/setup.git
-./setup/setup.sh   
+git clone https://github.com/bestape/.dotfiles
+./.dotfiles/setup.sh   
 ```
 ## customize
 To add apps to the setup, edit the `.setuprc.json` file. 
