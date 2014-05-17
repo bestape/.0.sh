@@ -13,7 +13,5 @@ git clone https://github.com/bestape/.dotfiles
 To add apps to the setup, edit the `.setuprc.json` file. 
 To change backup settings, edit the `.backuprc` file.
 To add to bash shell settings, edit the `.bashrc_custom` file.
-
-
-
-
+## notes
+Based on https://github.com/startup-class/dotfiles Startup Engineering MOOC by Balaji S. Srinivasan.
