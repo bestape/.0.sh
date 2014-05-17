@@ -1,0 +1,3 @@
+#! /bin/bash
+# If you modify this, after you're finished, run updateBash or restart Terminal.
+alias snakes='echo are in the grass'

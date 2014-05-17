@@ -1,0 +1,10 @@
+#! /bin/bash
+usrH=/home/<USER_NAME>
+backup=$usrH/.backup
+# Files to copy if modified.
+sudo cp -up /etc/fstab $backup
+# Folders to copy if modified.
+cp -upr $usrH/.ssh $backup
+# Files to create or rewrite if legacy present.
+dpkg --get-selections > $backup/installedApps
+sudo crontab -l | cat > $backup/crontab

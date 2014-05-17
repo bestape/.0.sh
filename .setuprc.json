@@ -1,0 +1,42 @@
+{
+	"apt-get": {
+		"git": {
+			"root": true
+			, "script": ".install/git.js"
+		}
+		, "screen": {
+			"root": true
+		}
+		, "unzip": {
+			"root": true
+		}
+		, "emacs24": {
+			"root": true
+			, "ppa": "cassou/emacs"
+			, "promptUser": false
+			, "append": [ "emacs24-el", "emacs24-common-non-dfsg" ]
+		}
+		, "nodejs": {
+			"root": true
+		}
+		, "npm": {
+			"root": true
+		}
+	}
+	, "npm" : {
+		"jshint": {
+			"root": true
+		}
+		, "underscore-cli": {
+			"root": true
+		}
+		, "jsonlint": {
+			"root": true
+		}
+	}
+	, "dpkg-reconfigure": {
+		"tzdata": {
+			"root": true
+		}
+	}
+}
