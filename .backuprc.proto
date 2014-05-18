@@ -1,10 +1,14 @@
 #! /bin/bash
-usrH=/home/<USER_NAME>
-backup=$usrH/.backup
-# Files to copy if modified.
-sudo cp -up /etc/fstab $backup
+usrH=/home/bestape
+backup=$usrH/.backup/@mori
+name=$(hostname)
+log=$name"Backup$(date +%b%d_%Y).txt"
+echo -e "=== start log ===" > $usrH/desktop/$log
+cp -up $usrH/dotfiles/.backuprc $usrH/dotfiles/.bashrc_custom $usrH/.config/user-dirs.dirs $usrH/.config/gtk-3.0/bookmarks $backup &>> $usrH/desktop/$log
+sudo cp -up /etc/fstab $backup &>> $usrH/desktop/$log
 # Folders to copy if modified.
-cp -upr $usrH/.ssh $backup
+cp -upr $usrH/.ssh $backup &>> $usrH/desktop/$log
 # Files to create or rewrite if legacy present.
-dpkg --get-selections > $backup/installedApps
-sudo crontab -l | cat > $backup/crontab
+dpkg --get-selections 2>> $usrH/desktop/$log > $backup/installedApps 
+sudo crontab -l | 2>> $usrH/desktop/$log cat > $backup/crontab 
+echo -e "==== end log ====" >> $usrH/desktop/$log
