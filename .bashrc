@@ -220,9 +220,7 @@ alias node_repl="node -e \"require('repl').start({ignoreUndefined: true})\""
 export NODE_DISABLE_COLORS=1
 if [ -s ~/.nvm/nvm.sh ]; then
     NVM_DIR=~/.nvm
-    echo 're'
     source ~/.nvm/nvm.sh 
-    echo 'dogs'
     nvmVer=$(cat .nvmrc)
     nvm use v$nvmVer &> /dev/null # silence nvm use; needed for rsync
 fi

@@ -10,7 +10,7 @@ function spawnErr(xO) {
 } 
 function addRepo(xA, xO, yA, zA) {
     zA = mkCmd('apt-add-repository', xO, xO.ppa)
-    function installRepo(xE) {
+    function installRepo() {
 	xE('sudo', ['apt-get', 'update'], {stdio: 'inherit'}).on('error', spawnErr).on('close', finishRepoInstall) 
 	return
     }
@@ -72,7 +72,7 @@ function mkCmd(xS, xO, yS, yA) {
 	return false
     }
 }
-function installApp(xA, xO, yA, xE) {
+function installApp(xA, xO, yA) {
     function finishAppInstall() {
 	if (xO.script) require('./' + xO)
 	nextApp(yA[0], yA[1])
