@@ -4,7 +4,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 nodeVer=$(cat $DIR/.nvmrc)
 ln -sb $DIR/.nvmrc ~
 ln -sb $DIR/.screenrc ~
-cp $DIR/.bashrc_profile.proto $DIR/.bashrc_profile
+cp $DIR/.bash_profile.proto $DIR/.bashrc_profile
 ln -sb $DIR/.bash_profile ~
 ln -sb $DIR/.bashrc ~
 cp $DIR/.bashrc_unique.proto $DIR/.bashrc_unique
