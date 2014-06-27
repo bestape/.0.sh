@@ -1,14 +1,13 @@
 #! /bin/bash
-usrH=/home/bestape
-backup=$usrH/.backup/@mori
 name=$(hostname)
+backup=~/.backup/@$name
 log=$name"Backup$(date +%b%d_%Y).txt"
-echo -e "=== start log ===" > $usrH/desktop/$log
-cp -up $usrH/dotfiles/.backuprc $usrH/dotfiles/.bashrc_custom $usrH/.config/user-dirs.dirs $usrH/.config/gtk-3.0/bookmarks $backup &>> $usrH/desktop/$log
-sudo cp -up /etc/fstab $backup &>> $usrH/desktop/$log
+echo -e "=== start log ===" > ~/desktop/$log
+cp -up ~/dotfiles/.backuprc ~/dotfiles/.bashrc_custom ~/.config/user-dirs.dirs ~/.config/gtk-3.0/bookmarks $backup &>> ~/desktop/$log
+sudo cp -up /etc/fstab $backup &>> ~/desktop/$log
 # Folders to copy if modified.
-cp -upr $usrH/.ssh $backup &>> $usrH/desktop/$log
+cp -upr ~/.ssh $backup &>> ~/desktop/$log
 # Files to create or rewrite if legacy present.
-dpkg --get-selections 2>> $usrH/desktop/$log > $backup/installedApps 
-sudo crontab -l | 2>> $usrH/desktop/$log cat > $backup/crontab 
-echo -e "==== end log ====" >> $usrH/desktop/$log
+dpkg --get-selections 2>> ~/desktop/$log > $backup/installedApps 
+sudo crontab -l | 2>> ~/desktop/$log cat > $backup/crontab 
+echo -e "==== end log ====" >> ~/desktop/$log
