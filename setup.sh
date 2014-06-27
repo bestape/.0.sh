@@ -1,7 +1,7 @@
 #! /bin/bash
 # It is assumed git is already loaded.
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-nodeVersion=$(cat $DIR/.nvmrc)
+nodeVer=$(cat $DIR/.nvmrc)
 ln -sb $DIR/.nvmrc ~
 ln -sb $DIR/.screenrc ~
 ln -sb $DIR/.bash_profile ~
@@ -29,8 +29,7 @@ if [ $userEmail ]; then
 fi
 curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | sh
 source ~/.nvm/nvm.sh
-nvm install $nodeVersion
-nvm use $nodeVersion
+nvm install $nodeVer
 node $DIR/setup.js
 source .bashrc
 exit 0
