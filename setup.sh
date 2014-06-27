@@ -32,4 +32,8 @@ source ~/.nvm/nvm.sh
 nvm install $nodeVer
 node $DIR/setup.js
 source .bashrc
+echo '
+Setup is now complete.
+Please load a new login bash shell to start using all the features.
+You can load a new login bash shell by logging in and out of this operating system.'
 exit 0
