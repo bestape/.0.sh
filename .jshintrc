@@ -1,9 +1,0 @@
-{
-  "quotmark": true,
-  "unused": true,
-  "trailing": true,
-  "maxdepth": 3,
-  "maxparams": 3,
-  "laxcomma": true,
-  "asi": true
-}

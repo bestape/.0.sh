@@ -5,7 +5,7 @@ Tested on 12.04 and 14.04.
 ## setup
 ```
 cd ~
-sudo apt-get install -y git-core
+sudo apt-get install -y git
 git clone https://github.com/bestape/.dotfiles
 .dotfiles/setup.sh   
 ```
@@ -13,6 +13,7 @@ git clone https://github.com/bestape/.dotfiles
 To add apps to the setup, edit the `setup.json` file. 
 To change backup settings, edit the `.backuprc` file.
 To add to bash shell settings, edit the `.bashrc_unique` file.
+To change the Node.js version, edit the `.nvmrc` file.
 ## license
 .dotfiles is released under the MIT license.
 
