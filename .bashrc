@@ -232,7 +232,7 @@ fi
 alias gitAB="git log -p --decorate --color"
 alias getApt="sudo apt-get install"
 alias getDeb="sudo dpkg -i"
-alias update="sudo apt-get update && sudo apt-get upgrade"
+alias update="sudo apt-get -y update && sudo apt-get -y upgrade"
 alias updateBash="source .bashrc"
 alias editSsh="em ~/.ssh/config"
 alias aliases="grep 'alias ' ~/.bashrc ~/.bashrc_unique"
