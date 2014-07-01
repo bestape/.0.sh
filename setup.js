@@ -8,8 +8,8 @@ function spawnErr(xO) {
     console.warn(xO)
     return
 }
-function addRepo(xA, xO, yA, zA) {
-    zA = mkCmd('apt-add-repository', xO, xO.ppa)
+function addRepo(xA, xO, yA) {
+    var zA = mkCmd('apt-add-repository', xO, xO.ppa)
     function installRepo() {
 		xE('sudo', ['apt-get', 'update'], {stdio: 'inherit'}).on('error', spawnErr).on('close', finishRepoInstall)
 		return
@@ -23,8 +23,8 @@ function addRepo(xA, xO, yA, zA) {
     return
 }
 // macro
-function mkCmd(xS, xO, yS, yA) {
-    yA = []
+function mkCmd(xS, xO, yS) {
+    var yA = []
     function pushXA(xA, i) {
 		for (i = 0; i < xO.append.length; i++) xA.push(xO.append[i])
 		return xA
@@ -83,7 +83,8 @@ function installApp(xA, xO, yA) {
     return
 }
 // dynamic
-function nextApp(xN, yN, xS, yA, yS, yO, zA) {
+function nextApp(xN, yN) {
+	var xS, yA, yS, yO, zA
     if (xA.length - 1 > xN) {
 		if (xA[xN].length - 1 > yN) {
 			xS = xA[xN]
