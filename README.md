@@ -3,8 +3,8 @@
 Clone and run this on a new Ubuntu instance.
 Tested on 12.04 and 14.04.
 ## setup
+From ~:
 ```
-cd ~
 sudo apt-get install -y git
 git clone https://github.com/bestape/.dotfiles
 .dotfiles/setup.sh   

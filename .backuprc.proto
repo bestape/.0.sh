@@ -1,4 +1,5 @@
 #! /bin/bash
+# To make changes in git, edit the proto suffixed version of this file.
 name=$(hostname)
 backup=~/.backup/@$name
 log=$name"Backup$(date +%b%d_%Y).txt"

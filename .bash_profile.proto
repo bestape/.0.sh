@@ -1,5 +1,6 @@
 # .bash_profile file
-# By Balaji S. Srinivasan (balajis@stanford.edu)
+# By Balaji S. Srinivasan (balajis@stanford.edu) and edited by bestape
+# To make changes in git, edit the proto suffixed version of this file.
 #
 # Concepts:
 # http://www.joshstaiger.org/archives/2005/07/bash_profile_vs.html
