@@ -221,7 +221,11 @@ export NODE_DISABLE_COLORS=1
 if [ -s ~/.nvm/nvm.sh ]; then
     NVM_DIR=~/.nvm
     source ~/.nvm/nvm.sh 
-    nvmVer=$(cat .nvmrc)
+	if [ -f .nvmrc ]; then
+		nvmVer=$(cat .nvmrc)
+	else
+		nvmVer=$(cat ~/.nvmrc)
+	fi
     nvm use v$nvmVer &> /dev/null # silence nvm use; needed for rsync
 fi
 

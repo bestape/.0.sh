@@ -16,7 +16,7 @@ To add to bash shell settings, edit the `.bashrc_unique` file.
 To change the Node.js version, edit the `.nvmrc` file.
 
 ## license
-.0.sh is released under the [ISC](http://www.isc.org/downloads/software-support-policy/isc-license) license.
+[.0.sh](http://0.sh.bestape.net) is released under the [ISC](http://www.isc.org/downloads/software-support-policy/isc-license) license.
 
 Copyright &copy; 2013-2014 by [bestape](mailto:.0.sh@bestape.net) 
 
