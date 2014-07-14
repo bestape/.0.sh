@@ -6,7 +6,7 @@ Tested on 12.04 and 14.04.
 ## setup
 From ~:
 * `sudo apt-get install -y git`
-* `git clone https://github.com/bestape/.0.sh`
+* `git clone http://0.sh.bestape.net .0.sh`
 * `.0.sh/setup.sh`
 
 ## customize
