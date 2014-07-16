@@ -30,7 +30,7 @@ fi
 curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | sh
 source ~/.nvm/nvm.sh
 nvm install $nodeVer
-node $DIR/setup.js
+node $DIR/posit.js
 sudo apt-get -y update && sudo apt-get -y upgrade
 echo "
 --------------- fin setup notice -----------------

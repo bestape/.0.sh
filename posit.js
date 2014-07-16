@@ -1,11 +1,11 @@
 #! /usr/bin/env node
-// static
-var xO = require('./setup.json')
+// init IO == identity element, metadata, header, 0
+var xO = require('./posit.json')
 , xA = Object.keys(xO)
 , xE = require('child_process').spawn
-// micro
+// events == operative element, data, body, x
 function spawnErr(xO) {
-    console.warn(xO)
+    console.warn(JSON.stringify(xO, null, 4))
     return
 }
 function addRepo(xA, xO, yA) {
@@ -22,7 +22,16 @@ function addRepo(xA, xO, yA) {
     xE(zA[0], zA[1], {stdio: 'inherit'}).on('error', spawnErr).on('close', installRepo)
     return
 }
-// macro
+function installApp(xA, xO, yA) {
+    function finishAppInstall() {
+		if (xO.script) require('./' + xO)
+		nextApp(yA[0], yA[1])
+		return
+    }
+    if (xO.ppa) addRepo(xA, xO, yA)
+    else xE(xA[0], xA[1], {stdio: 'inherit'}).on('error', spawnErr).on('close', finishAppInstall)
+    return
+}
 function mkCmd(xS, xO, yS) {
     var yA = []
     function pushXA(xA, i) {
@@ -72,17 +81,6 @@ function mkCmd(xS, xO, yS) {
 		return false
     }
 }
-function installApp(xA, xO, yA) {
-    function finishAppInstall() {
-		if (xO.script) require('./' + xO)
-		nextApp(yA[0], yA[1])
-		return
-    }
-    if (xO.ppa) addRepo(xA, xO, yA)
-    else xE(xA[0], xA[1], {stdio: 'inherit'}).on('error', spawnErr).on('close', finishAppInstall)
-    return
-}
-// dynamic
 function nextApp(xN, yN) {
 	var xS, yA, yS, yO, zA
     if (xA.length - 1 > xN) {

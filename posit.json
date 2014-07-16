@@ -3,44 +3,34 @@
 		"rlwrap": {
 			"root": true
 			, "promptUser": false
-		}
-		, "screen": {
+		}, "screen": {
 			"root": true
 			, "promptUser": false
-		}
-		, "unzip": {
+		}, "unzip": {
 			"root": true
 			, "promptUser": false
-		}
-		, "emacs24": {
+		}, "emacs24": {
 			"root": true
 			, "ppa": "cassou/emacs"
 			, "promptUser": false
 			, "append": [ "emacs24-el", "emacs24-common-non-dfsg" ]
-		}
-		, "nodejs": {
+		}, "nodejs": {
 			"root": true
 			, "promptUser": false
-		}
-		, "npm": {
+		}, "npm": {
 			"root": true
 			, "promptUser": false
-		}
-    }
+		}}
     , "npm" : {
 		"jshint": {
 			"root": true
-		}
-		, "underscore-cli": {
+		}, "underscore-cli": {
 			"root": true
-		}
-		, "jsonlint": {
+		}, "jsonlint": {
 			"root": true
-		}
-    }
+		}}
     , "dpkg-reconfigure": {
 		"tzdata": {
 			"root": true
-		}
-    }
+		}}
 }
