@@ -26,3 +26,5 @@ THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH RE
 
 ## notes
 Based on https://github.com/startup-class/dotfiles Startup Engineering MOOC by Balaji S. Srinivasan.
+
+`posit.js` can be executed to install multiple applications at once. It will install whatever is listed in `posit.json`.

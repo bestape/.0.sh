@@ -92,12 +92,12 @@ function nextApp(xN, yN) {
 			zA = mkCmd(xS, yO, yS)
 			yN++
 			if (zA) installApp(zA, yO, [xN, yN])
-			else console.warn('I do not know how to run ' + xS + ' files')
+			else console.warn('error:\nI do not know how to run ' + xS + ' files.')
 		} else {
 			xN++
 			nextApp(xN, 0)
 		}
-    } else console.log('Finished loading applications.')
+    } else console.log('notice:\nFinished loading applications.')
     return
 }
 nextApp(0, 0)
